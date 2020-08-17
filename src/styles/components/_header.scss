@@ -1,0 +1,60 @@
+@import 'variables';
+
+.header{
+  background-color: #fff;
+  padding: 12.5px 0;
+
+  border-bottom: 1px solid rgba(var(--b6a,219,219,219),1);
+
+  // box-shadow: 0 1px 2px rgba($color: #456, $alpha: 0.3);
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    max-width: 75%;
+    padding: 0 20px;
+  }
+
+  &__logo{
+    display: flex;
+
+    img {
+      max-height: 40px;
+      max-width: 160px;
+    }
+  }
+
+  &__search-bar{
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    display: flex;
+    width: 250px;
+    height: 29px;
+    border-radius: 3px;
+
+    .searchbox{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+
+      .input {
+        border: none;
+        outline: none;
+      }
+    }
+  }
+
+  &__info{
+    display: flex;
+    
+    &-notify{
+      margin-right: 25px;
+    }
+  }
+
+}
+
+.body{
+  height: 100vh;
+  background-color: #FAFAFA;
+}

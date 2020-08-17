@@ -1,0 +1,43 @@
+@import 'fonts';
+@import 'variables';
+@import 'libs/normalize';
+
+@import 'components/all';
+
+body {
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100%;
+  background-color: #fff;
+  // margin: 0 auto;
+  border-radius: 10px;
+  // max-width: 1400px;
+}
+
+.content {
+  padding: 40px 0;
+
+  &__title {
+    margin: 35px 0;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
+}
